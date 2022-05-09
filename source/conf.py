@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'SCUBAChangeResidues'
+project = 'ChangeResidues'
 copyright = '2022, zl'
 author = 'zl'
 
