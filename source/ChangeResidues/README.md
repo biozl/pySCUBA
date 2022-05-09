@@ -17,6 +17,17 @@ The `SCUBAChangeResidues.py` contains class `ChangeResidues` which can
 |Replaceresidues|Those residues will be mutated by assigning some positions.|`chainidx`: it is same with the parameter of function `Changesequence`. `changesites`:dirtionary, if you want to mutate residue of second and fourth position to His and Gly, respectively, it should be set to {1:'H', 3:'G'}|Molmodeler.changeresidue|
 |writepdb|The final protein structure can be saved with this function.|`outputfile`: string, the saved path for the protein structure.|IntrctMol.writepdb|
 
+<table>
+  <thead>
+    <tr>
+      <th>Header
+      <th>Another Header
+  </thead>
+  <tr>
+    <td>field 1
+    <td>value one
+</table>
+
 First of all, we need to build a changeresidues object with `ChangeResidues(pdbfile)`
 ```
 pdbfile='/home/zhanglu/workspace/new/pybind11/backbone/test/3nir_pre.pdb'
