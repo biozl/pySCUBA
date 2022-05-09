@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ChangeResidues'
+project = 'pySCUBA'
 copyright = '2022, zl'
 author = 'zl'
 
