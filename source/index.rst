@@ -10,7 +10,7 @@ Welcome to SCUBAChangeResidues's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-README
+   README
 
 Indices and tables
 ==================
