@@ -5,3 +5,4 @@ SCUBAChangeResidues
    :maxdepth: 1
    
    README
+   READMErst
