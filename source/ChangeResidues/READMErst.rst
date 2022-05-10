@@ -8,8 +8,14 @@ SCUBAChangeResidues is aimed at the amino acid mutations of protein. For
 example,
 
 The ``SCUBAChangeResidues.py`` contains class ``ChangeResidues`` which
-can ## Class ChangeResidues ``ChangeResidues`` will be initialized with
-a path containing a protein structure.
+can mutate residues with three functions, ``Changesequence``,
+``MakeLVG`` and ``Replaceresidues``.
+
+Class ChangeResidues
+--------------------
+
+``ChangeResidues`` will be initialized with a path containing a protein
+structure.
 
 functions
 ---------
@@ -67,56 +73,6 @@ functions
 |               |                    | structure.        |            |
 +---------------+--------------------+-------------------+------------+
 
-.. raw:: html
-
-   <table>
-
-.. raw:: html
-
-   <thead>
-
-.. raw:: html
-
-   <tr>
-
-.. raw:: html
-
-   <th>
-
-Header
-
-.. raw:: html
-
-   <th>
-
-Another Header
-
-.. raw:: html
-
-   </thead>
-
-.. raw:: html
-
-   <tr>
-
-.. raw:: html
-
-   <td>
-
-field 1
-
-.. raw:: html
-
-   <td>
-
-value one
-
-.. raw:: html
-
-   </table>
-
-https://www.daimajiaoliu.com/daima/7b73864bfa98000
-
 First of all, we need to build a changeresidues object with
 ``ChangeResidues(pdbfile)``
 
@@ -125,21 +81,39 @@ First of all, we need to build a changeresidues object with
    pdbfile='/home/zhanglu/workspace/new/pybind11/backbone/test/3nir_pre.pdb'
    changeresidues=ChangeResidues(pdbfile)
 
-main process
+We can mutate residues with class functions of ``changeresidues``
+object. If you want to change many positions of one chain,
+``Changesequence`` is recommended to be used. It just needs two
+parameters which were introduced in the above table clearly.
 
 ::
 
-   #initialization
-   #parameters
    changedchainid=0
    newsequence='TTCCPSIVHHHHHHVCRLPGHHHHHHATYTGCIIIPGATCPGDYAN'
+   changeresidues.Changesequence(changedchainid,newsequence)
+
+Note: ``newsequence`` should be assigned to the same length sequence
+with the original chain.
+
+Residues can be mutated with ``MakeLVG`` according to the secondary
+structure. If residues are in helix, they will be mutated to HIS. If
+they are in strand or loop, they will be changed to VAL or GLY,
+respectively.
+
+::
+
+   changedchainid=0
+   changeresidues.MakeLVG(changedchainid)
+
+This is the final function to mutate residues. It and ``Changesequence``
+can achieve same function. The difference between them is that
+``Replaceresidues`` just needs to be assigned the changed positions not
+all length of chain.
+
+::
+
    changesites={0:'H',10:'H',15:'C',20:'V'}
+   changeresidues.Replaceresidues(changedchainid,changesites)
 
-   #function
-   cr.Changesequence(changedchainid,newsequence)
-   cr.MakeLVG(changedchainid)
-   cr.Replaceresidues(changedchainid,changesites)
-
-   #output
-   outputfile='/home/zhanglu/workspace/new/pybind11/backbone/test/changesequence.pdb'
-   cr.writepdb(outputfile)
+Finally, you can save the modified structure to the path you assigned.
+\``\` out
