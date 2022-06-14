@@ -22,7 +22,8 @@ copyright = '2022, zl'
 author = 'zl'
 
 # The full version, including alpha/beta/rc tags
-release = 'v1.0'
+#release = 'v1.0'
+release = 'beta'
 
 
 # -- General configuration ---------------------------------------------------
