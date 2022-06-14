@@ -1,1 +1,1 @@
-# PySCUBA_ChangeResidues
+# pySCUBA
