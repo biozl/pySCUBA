@@ -15,15 +15,15 @@ from pblib import *
 
 输入文件：sketch文本（必须），sketchpar参数文件（可选）
 脚本示例：
-|参数|说明|
-|------------------------|------------------------------------------------|
-|sketchpar='newsketchpar.txt'|#参数文件，如果没有会自动生成,用于备份你的信息。必须输入|
-|skecthfile='3pvh.txt'|#sketch坐标文件  。必须输入|
-|linkoption=1|#是否连接loop，0不连，1连，默认0|
-|randomseed=15|#随机数种子|
-|outputname='build'|#输出pdb的文件名,以此为前缀：build0.pdb,并会生成二级结构信息：build0_final_ss.txt 。 必须输入|
-|gennumber=2|#生成的结构数目，默认1|
-|Sketchbuildpdb(sketchpar,skecthfile,linkoption,randomseed,outputname,gennumber)|运行生成 |
+```
+sketchpar='newsketchpar.txt'		#参数文件，如果没有会自动生成,用于备份你的信息。必须输入
+skecthfile='3pvh.txt'			#sketch坐标文件  。必须输入
+linkoption=1				#是否连接loop，0不连，1连，默认0
+randomseed=15				#随机数种子
+outputname='build'			#输出pdb的文件名,以此为前缀：build0.pdb,并会生成二级结构信息：build0_final_ss.txt 。 必须输入
+gennumber=2				#生成的结构数目，默认1
+Sketchbuildpdb(sketchpar,skecthfile,linkoption,randomseed,outputname,gennumber)	运行生成
+```
 
 输入sketch示例：3pvh.txt
 ```
