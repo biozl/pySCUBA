@@ -5,4 +5,4 @@ DEPACTPocketMatch
    :maxdepth: 1
    
    
-   READMErst
+   README
