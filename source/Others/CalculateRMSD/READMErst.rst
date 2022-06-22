@@ -1,6 +1,0 @@
-CalculateRMSD
-===================
-
-Introduction
-------------
-

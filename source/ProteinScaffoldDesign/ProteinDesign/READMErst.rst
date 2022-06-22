@@ -1,6 +1,0 @@
-ProteinDesign
-===================
-
-Introduction
-------------
-
