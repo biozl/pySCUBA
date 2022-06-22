@@ -5,6 +5,5 @@ SCUBALoopSampler
    :maxdepth: 1
    
    
-   
    SCUBALoopSampler
    
