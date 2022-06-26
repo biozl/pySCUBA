@@ -1,3 +1,5 @@
+# ABACUS2
+
 3.脚本名：`ABACUS2Designseq.py`<br>
 功能：设计序列
 输入：pdb文件
