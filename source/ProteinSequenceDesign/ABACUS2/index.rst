@@ -5,4 +5,4 @@ ABACUS2
    :maxdepth: 1
    
    
-   ABACUS2Designseq
+   README
