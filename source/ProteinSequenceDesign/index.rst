@@ -2,7 +2,7 @@ ProteinSequenceDesign
 =================================
  
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    
    
    ABACUS2/index
